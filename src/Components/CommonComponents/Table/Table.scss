@@ -19,8 +19,11 @@
   border-collapse: collapse;
   tbody {
     tr {
+      padding-left: 5px;
       height: 40px;
       border: 1px solid lightgrey;
+      border-left-color: #fff;
+      border-right-color: #fff;
     }
   }
 }
@@ -56,6 +59,7 @@
   font-size: 22px;
   align-items: center;
   font-weight: 500;
+  cursor: pointer;
 }
 .tableHeaderFigures {
   @extend .tableHeaderTitle;

@@ -7,13 +7,13 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path={"/"}>
-          <Redirect to={"/table"} />
-        </Route>
         <Route path={"/table"}>
           <div style={{ width: "100vw" }}>
             <AnalyticsTable />
           </div>
+        </Route>
+        <Route exact path={"/"}>
+          <Redirect to={"/table"} />
         </Route>
       </Switch>
     </BrowserRouter>

@@ -545,7 +545,14 @@ class Table extends React.Component<TableViewProps, TableState> {
                             this.props.columnHeaders[order].dataField
                           ] && <ArrowUpwardIcon />}
                         </span>
-                        <span className={"tableHeaderFigures"}>
+                        <span
+                          onClick={() =>
+                            this.sortListBasedOnColumn(
+                              this.props.columnHeaders[order].dataField
+                            )
+                          }
+                          className={"tableHeaderFigures"}
+                        >
                           {this.props.columnHeaders[order].filterType ===
                             "range" &&
                             convertToInternationalCurrencySystem(
