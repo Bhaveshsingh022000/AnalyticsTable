@@ -43,7 +43,7 @@ const AnalyticsTable: React.FC<AnalyticsTableProps> = (props) => {
   const { data } = useSWR<TableData[] | undefined>(
     () =>
       props.startDate && props.endDate
-        ? `http://go-dev.greedygame.com/v3/dummy/report?startDate=${props.startDate}&endDate=${props.endDate}`
+        ? `https://go-dev.greedygame.com/v3/dummy/report?startDate=${props.startDate}&endDate=${props.endDate}`
         : "",
     tableDataFetcher,
     {
@@ -53,7 +53,7 @@ const AnalyticsTable: React.FC<AnalyticsTableProps> = (props) => {
   );
 
   const appData = useSWR<AppData[] | undefined>(
-    () => `http://go-dev.greedygame.com/v3/dummy/apps`,
+    () => `https://go-dev.greedygame.com/v3/dummy/apps`,
     appDataFetcher,
     {
       dedupingInterval: 5000,
