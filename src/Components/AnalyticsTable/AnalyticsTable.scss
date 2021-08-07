@@ -1,0 +1,28 @@
+.textAlignLeft{
+    text-align: left;
+}
+
+.textAlignRight{
+    text-align: right;
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.settingsIcon{
+    color: #136fed;
+}
+.settingsButton{
+    background-color: white !important;
+    text-transform: capitalize !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+.mainContainer{
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+}
+

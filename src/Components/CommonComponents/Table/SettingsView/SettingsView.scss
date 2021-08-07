@@ -1,0 +1,44 @@
+.settingsContainer {
+  border: 2px solid lightgray;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.columnListContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.visibleColumn {
+  display: block;
+  padding: 5px;
+  min-width: 205px;
+  max-width: 205px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  border-left: 5px solid #136fed;
+}
+
+.hiddenColumn {
+  @extend .visibleColumn;
+  border-left: 2px solid gray;
+}
+
+.settingControlSection {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+.closeButton{
+  color: #136fed !important;
+  background-color: #fff !important;
+}
+
+.applyButton{
+  color: #fff !important;
+  background-color: #136fed !important;
+
+}

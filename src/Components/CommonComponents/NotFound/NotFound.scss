@@ -1,0 +1,17 @@
+.noDataContainer{
+    display: flex;
+    background-color: #F9F9F9;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+.primaryText{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 5px;
+}
+.secondaryText{
+    font-size: 15px;
+    color: gray;
+}
